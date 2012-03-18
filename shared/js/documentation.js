@@ -73,6 +73,6 @@ $(function() {
 
   // Dynamic year for footer copyright
   var currentYear = (new Date).getFullYear();
-  $("#year").text( (new Date).getFullYear() );
+  $("#year").text( currentYear );
 
 });
