@@ -16,7 +16,8 @@ function tip(resp){
  *        status - the status of GitHub
  */
 function updateStatus(resp){
-  current = resp['status']
+  var current = resp['status']
+  var message
   if (current == 'majorproblem')
     message = "Major service disruption"
   else if (current == 'minorproblem')
